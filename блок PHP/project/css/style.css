@@ -1,0 +1,37 @@
+@import url(../fonts/Circe/stylesheet.css);
+@import url(../css/categories.css);
+@import url(../css/breadcrumbs.css);
+@import url(../css/store.css);
+@import url(../css/product.css);
+@import url(../css/pages_slaider.css);
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	color: #131313;
+	font-family: 'Circe';
+}
+
+a {
+	text-decoration: none;
+	color: #131313;
+	padding: 0;
+	margin: 0;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.layout {
+	max-width: 950px;
+	padding: 30px 0 100px 0;
+	margin: 0 auto;
+}
+
+.price::after {
+	content: "₽";
+	margin-left: 5px;
+}

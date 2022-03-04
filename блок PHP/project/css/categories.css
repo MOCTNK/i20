@@ -1,0 +1,40 @@
+.categories {
+	width: 100%;
+}
+
+.categories__card {
+	width:  220px;
+	box-shadow: 1px 5px 8px 0px rgba(34, 60, 80, 0.49);
+	display: inline-block;
+	margin: 30px 0 0 10px;
+	cursor: pointer;
+}
+
+.categories__image {
+	width: 220px;
+	height: 220px;
+	background-color: grey;
+	background-size: 220px 220px;
+	padding: 0;
+	margin: 0;
+}
+
+.categories__info {
+	width: 100%;
+	height: 50px;
+	font-size: 16px;
+	line-height: 50px;
+}
+
+.categories__name {
+	width: 170px;
+	float: left;
+	padding-left: 10px;
+}
+
+.categories__count {
+	width: 30px;
+	float: left;
+	text-align: right;
+	padding-right: 10px;
+}
