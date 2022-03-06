@@ -1,0 +1,14 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+.container {
+	width: 700px;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -350px;
+}

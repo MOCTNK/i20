@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Страница магазина</title>
+</head>
+<body style="font-family: 'Circe Thin';">
+	<div class="layout">
+		<div class="product">
+			<div class="product__preview">
+				<div class="product__slaider">
+					<img id="slaider-image-1" class="product__slaider-image" src="images/product-1.png" >
+					<img id="slaider-image-2" class="product__slaider-image" src="images/product-2.png" >
+					<img id="slaider-image-3" class="product__slaider-image" src="images/product-3.png" >
+				</div>
+				<img id="product" class="product__item" src="images/product-1.png" />
+			</div>
+			<div class="product__description">
+				<h2 class="product__title">Рубашка Medicine</h2>
+				<div class="product__categories">
+					<a href="#">Рубашка Medicine</a>
+					<a href="#">Все модели Medicine</a>
+					<a href="#">Рубашки</a>
+				</div>
+				<div class="product__price">
+					<div class="product__price-actual">
+						<span class="product__price-old">2 699</span>
+						<span class="product__price-current price">2 499</span>
+					</div>
+					<div class="product__price-discount">
+						<span class="product__price-sale price">2 227</span>
+						<span class="product__price-code">- с промокодом</span>
+					</div>
+				</div>
+				<div class="product__info">
+					<div class="product__info-item">
+						<img class="product__info-image" src="images/item-1.png">
+						<span class="product__info-about">В наличии в магазине <a href="#">Lamoda</a></span>
+					</div>
+					<div class="product__info-item">
+						<img class="product__info-image" src="images/item-2.png">
+						<span class="product__info-about">Бесплатная доставка</span>
+					</div>
+				</div>
+				<div class="product__counter">
+					<button id="counter-minus" class="product__counter-button">-</button>
+					<input id="counter-count" class="product__counter-count" type="text" value="1" readonly />
+					<button id="counter-plus" class="product__counter-button">+</button>
+				</div>
+				<div class="product__action">
+					<button id="buy" class="custom-button custom-button--blue">Купить</button>
+					<button class="custom-button">В избранное</button>
+				</div>
+				<div class="product__text">
+					Рубашка Medicine выполнена из вискозной ткани с клетчатым узором. Детали: прямой крой; отложной воротник; планка и манжеты на пуговицах; карман на груди.
+				</div>
+				<div class="product__share">
+					<span class="product__share-title">Поделиться:</span>
+					<div class="product__share-list">
+						<img class="product__share-image" src="images/share-1.png">
+						<img class="product__share-image" src="images/share-2.png">
+						<img class="product__share-image" src="images/share-3.png">
+						<img class="product__share-image" src="images/share-4.png">
+					</div>
+					<span class="product__share-count">123</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="jquery/jquery.js"></script>
+	<script src="jquery/notice/dist/notice.js"></script>
+	<script src="jquery/main.js"></script>
+</body>
+</html>

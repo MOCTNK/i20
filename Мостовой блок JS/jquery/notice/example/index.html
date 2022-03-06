@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+<head>
+    <title>jQuery Notice Plugin Demos</title>
+    <style>
+      body {
+        font-family: Helvetica, Arial;
+      }
+      .wrapper {
+        width: 980px;
+        margin: 10px auto;
+        border: 1px solid #ccc;
+      }
+      .btns {
+        padding-top: 40px;
+      } 
+      div > p {
+        text-align: center;
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+    <h1>jQuery Notice Plugin Demos</h1>
+    <div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+      <div class="btns">
+        <button>Info</button>
+        <button data-level="success">Success</button>
+        <button data-level="warning">Warning</button>
+        <button data-level="error">Error</button>
+        <button data-top="100">Offset Top</button>
+        <button data-level="success" data-anchor="bottom">Bottom</button>
+        <button data-bottom="200" data-anchor="bottom">Offset Bottom</button>
+      </div>
+      <!--<div>-->
+        <!--<p class="notice-success">Success</p>-->
+        <!--<p class="notice-warning">Warning</p>-->
+        <!--<p class="notice-error">Error</p>-->
+        <!--<p class="notice-info">Info</p>-->
+      <!--</div>-->
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../dist/notice.js"></script>
+    <script>
+      $.notice.defaults.container = '.wrapper';
+      $('button').on('click', function() {
+        var level = $(this).data('level') || 'info';
+        var top = $(this).data('top') || 0;
+        var bottom = $(this).data('bottom') || 0;
+        var anchor = $(this).data('anchor') || 'top';
+
+        $.notice('this is a '+ level +' message', {
+          level: level,
+          offset: top || bottom,
+          anchor: anchor
+        });
+      });
+      setTimeout(function() {
+        $.notice('this is a test message');
+      }, 1000);
+    </script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+  </body>
+</html>

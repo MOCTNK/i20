@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задача 2. Формы</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Запись на курсы программирования</h1>
+		</header>
+		<main>
+			<form action="#" method="POST">
+				<p>Имя:<br>
+					<input type="text" name="name" placeholder="Андрей">
+				</p>
+				<p>
+					<input type="radio" id="skill1" name="skills" value="java" checked>
+					<label for="skill1">Java</label>
+
+					<input type="radio" id="skill2" name="skills" value="c">
+					<label for="skill2">C++</label>
+
+					<input type="radio" id="skill3" name="skills" value="python">
+					<label for="skill3">Python</label>
+
+					<input type="radio" id="skill4" name="skills" value="php">
+					<label for="skill4">PHP</label>
+
+					<input type="radio" id="skill5" name="skills" value="javascript">
+					<label for="skill5">JavaScript</label>
+				</p>
+				<p>Дополнительная информация:<br>
+					<textarea name="info" cols="50" rows="10" style="resize: none;" placeholder="Есть опыт программирования на Java"></textarea>
+				</p>
+				<p>Секретное слово:<br>
+					<input type="password" name="password" placeholder="Пароль">
+				</p>
+				<p>
+					<input type="checkbox" id="rules" name="rules">
+					<label for="rules">С правилами ознакомился и согласен</label>
+				</p>
+				<button>Отправить</button>
+				<button>Очистить</button>
+			</form>
+		</main>
+		<footer>
+
+		</footer>
+	</div>
+</body>
+</html>

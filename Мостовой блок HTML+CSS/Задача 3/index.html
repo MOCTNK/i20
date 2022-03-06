@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задача 3. Форма авторизации</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<form class="login-form" action="#" method="POST">
+			<h1>
+				<div class="login-form__head">Account login</div>
+			</h1>
+			<p>
+				<div class="login-form__input-name">Username</div>
+				<input class="login-form__input" type="text" maxlength="25">
+			</p>
+			<p>
+				<div class="login-form__input-name">Password</div>
+				<input class="login-form__input" type="password" maxlength="25">
+				<div class="login-form__hidden-password"></div>
+			</p>
+			<p>
+				<div class="login-form__block">
+					<div style="width: 50%; height: 100%; float: left;">
+						<input id="remember" class="login-form__checkbox" type="checkbox">
+						<label for="remember" style="font-size: 13px; position: absolute;">Remember me</label>
+					</div>
+					<div class="login-form__forgot">
+						Forgot Password?
+					</div>
+				</div>
+			</p>
+			<button class="login-form__button">Login</button>
+		</form>
+	</div>
+</body>
+</html>
