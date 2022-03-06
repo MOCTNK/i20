@@ -6,7 +6,7 @@
 	}
 
 	function checkInt($int) {
-		$minus = ($get_int < 0) ? -1 : 1;
+		$minus = ($int < 0) ? -1 : 1;
 		return  $minus * abs((int)$int);
 	}
 
