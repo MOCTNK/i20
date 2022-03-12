@@ -1,5 +1,11 @@
 <?php 
 	require './config/lib.php';
+	$data = [
+		'name' => "",
+		'email' => "",
+		'year' => 0,
+		'gender' => 0
+	];
 	if(isset($_COOKIE['data'])) {
 		$data = getData();
 	}

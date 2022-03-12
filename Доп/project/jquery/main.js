@@ -53,10 +53,6 @@ $('document').ready( function() {
 				if(parseInt(data) == 1) {
 					checkErrors(data);
 				}     
-				if(parseInt(data) == 2) {
-					alert("Данные не заданы!");
-					$(location).attr('href',"/");
-				} 
 			}
 		});
 	}
@@ -68,7 +64,40 @@ $('document').ready( function() {
 			clearError();
 			insertData();
 		} else {
+			alert("Подтвердите ознакомление с контрактом");
 			$('#inputc-5').css("color", "red");
 		}
+	});
+
+	$('#input-1').click(function() {
+		$('#error-1').html("");
+		$('#input-1').css("border-color", "#EBEBEB");
+	});
+
+	$('#input-2').click(function() {
+		$('#error-2').html("");
+		$('#input-2').css("border-color", "#EBEBEB");
+	});
+
+	$('select[name="year"]').click(function() {
+		$('#error-3').html("");
+	});
+
+	$('input[name="gender"]').click(function() {
+		$('#error-4').html("");
+	});
+
+	$('#input-3').click(function() {
+		$('#error-5').html("");
+		$('#input-3').css("border-color", "#EBEBEB");
+	});
+
+	$('#input-4').click(function() {
+		$('#error-6').html("");
+		$('#input-4').css("border-color", "#EBEBEB");
+	});
+
+	$('#input-5').click(function() {
+		$('#inputc-5').css("color", "#555555");
 	});
 }); 
